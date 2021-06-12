@@ -1,0 +1,61 @@
+/**
+@mainpage Dokumentacja zadania wielomiany
+
+### Treść zadania
+
+Uwaga: aktualna treść zadania znajduje się w [Moodle](https://moodle.mimuw.edu.pl).
+
+### Opis programu
+
+Tegoroczne duże zadanie polega na zaimplementowaniu operacji na wielomianach
+rzadkich wielu zmiennych.
+
+### Funkcje programu
+
+Program ma funkcje odpowiedzialne za dodawanie, odejmowanie i mnożenie dwóch
+wielomianów. Program potrafi też znaleźć wielomian przeciwny i obliczyć
+wartość wielomianu w zadanym punkcie, a także sprawdzić, czy podane dwa
+wielomiany są sobie równe. Ponadto znajduje stopień wielomianu oraz stopień
+wielomianu ze względu na zadaną zmienną.
+
+### Funkcje programu - kalkulator
+
+Program działa kalkulator wielomianów rzadkich wielu zmiennych 
+stosujący odwrotną notację polską. Wielomiany przechowywane są na stosie,
+na którym mogą być wywoływane liczne funkcje arytmetyczne, a także standardowe
+operacje stosowe takie jak push, pop.
+
+### Kalkulator - obsługa błędów
+
+Jeśli na stosie zostanie wywołana niepoprawna lub niemożliwa w realizacji 
+komenda (np. pop, gdy stos jest pusty), na standardowe wyjście diagnostyczne
+wypisywana jest informacja o błędzie i jego rodzaju, wraz z numerem wiersza
+wejścia, w którym wystąpił błąd.
+
+W przypadku podania programowi niepoprawnego wielomianu, również na standardowe
+wyjście diagnostyczne wypisywana jest informacja o numerze wiersza z błędem i o
+rodzaju błędu - niepoprawnym zapisie lub niepoprawnej zmiennej dla konkretnej operacji.
+
+### Błędy krytyczne
+Jeśli w trakcie trwania programu nie powiedzie się alokacja pamięci,
+program przerywany jest awaryjnie z kodem 1.
+
+### Ignorowane wiersze
+Program ignoruje wiersza puste oraz wiersze rozpoczynające się znakiem '#'.
+
+### Sposób przechowywania wielomianów
+
+Wielomian jest strukturą zawierającą tablicę jednomianów oraz unię, w której 
+przechowuje rozmiar tablicy, lub gdy tablica jest pusta, stałą równą 
+wielomianowi.
+
+Jednomian przechowywany jest jako para liczb: exp - wykładnik jednomianu oraz
+p - wielomian stojący przy jednomianie.
+
+### Struktura stosu
+
+W programie zaimplementowana jest struktura stosu przechowująca wielomiany.
+Struktura jest typu tablicowego i, oprócz tablicy wielomianów leżących na stosie,
+pamięta też rozmiar tablicy oraz indeks wierzchu stosu.
+
+*/
